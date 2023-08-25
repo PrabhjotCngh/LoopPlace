@@ -19,7 +19,13 @@ enum HomeScreenConstants {
 }
 
 enum APIConstants {
-    static let apiUrl = "https://pubservices.banyanpro.com/api/ProductCategories"
+    static let categoryListAPIUrl = "https://pubservices.banyanpro.com/api/ProductCategories"
+    
+    enum APIErrorMessages {
+        static let invalidURL = "Incorrect url!"
+        static let invalidData = "Response data is empty!"
+        static let genericMessage = "Something went wrong! Please try again later"
+    }
 }
 
 enum NetworkError: Error {

@@ -7,14 +7,15 @@
 import SwiftUI
 
 struct CollectionListingView: View {
+    let categoryId : Int
     
     var body: some View {
-        Text("CollectionListingView")
+        Text("\(categoryId)")
     }
 }
 
 struct CollectionListingView_Previews: PreviewProvider {
     static var previews: some View {
-        CollectionListingView()
+        CollectionListingView(categoryId: 0)
     }
 }

@@ -114,9 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				430ED09A2A2E419000F602C4 /* AdDetailView.swift */,
-				430ED09C2A2E419000F602C4 /* CollectionListingView.swift */,
 				430ED09E2A2E419000F602C4 /* CollectionsView.swift */,
 				8DEC2F112A9761AA00EF10CF /* Home Screen */,
+				8DEC2F232A98E61000EF10CF /* SelectedAds Screen */,
 				430ED09B2A2E419000F602C4 /* RatingsView.swift */,
 			);
 			path = View;
@@ -262,6 +262,14 @@
 				8DEC2F1B2A97692300EF10CF /* NetworkServiceFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		8DEC2F232A98E61000EF10CF /* SelectedAds Screen */ = {
+			isa = PBXGroup;
+			children = (
+				430ED09C2A2E419000F602C4 /* CollectionListingView.swift */,
+			);
+			path = "SelectedAds Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
