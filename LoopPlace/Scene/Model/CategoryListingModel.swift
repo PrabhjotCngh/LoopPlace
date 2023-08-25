@@ -4,6 +4,8 @@
 //
 //
 
+import Foundation
+
 struct CategoryListingModel: Codable {
     let CategoryName: String
     let Id: Int

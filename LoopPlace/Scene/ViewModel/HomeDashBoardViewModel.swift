@@ -10,8 +10,8 @@ class HomeDashBoardViewModel: ObservableObject {
     
     //MARK: - Variables
     var networkRequest: NetworkRequestProtocol
-    var requestSucceeded: () -> Void = {}
     var requestFailed: (String) -> Void = {_ in}
+    @Published var categoryList: [CategoryListingModel] = []
     
     init(networkRequest: NetworkRequestProtocol) {
         self.networkRequest = networkRequest
@@ -19,26 +19,24 @@ class HomeDashBoardViewModel: ObservableObject {
     
     //MARK: - Functions
     /// Fetch list of categories
-    @MainActor func fetchCategoryList() {
-        print("API call")
-        Task {
-            do {
-                networkRequest.performRequest(url: APIConstants.apiUrl) { [weak self] result in
-                    if let _weakSelf = self {
-                        switch result {
-                        case .success(let responseModel):
-                            print(responseModel)
-                            break
-                        case .failure(let networkError):
-                            print(networkError)
-                            break
-                        }
+    func fetchCategoryList() {
+        networkRequest.performRequest(url: APIConstants.categoryListAPIUrl) { [weak self] result in
+            if let _weakSelf = self {
+                switch result {
+                case .success(let responseModel):
+                    DispatchQueue.main.async {
+                        _weakSelf.categoryList = responseModel
                     }
+                case .failure(NetworkError.invalidURL):
+                    _weakSelf.requestFailed(APIConstants.APIErrorMessages.invalidURL)
+                case .failure(NetworkError.invalidData):
+                    _weakSelf.requestFailed(APIConstants.APIErrorMessages.invalidData)
+                case .failure(NetworkError.decodingError(let error)), .failure(NetworkError.apiError(let error)):
+                    _weakSelf.requestFailed(error.localizedDescription)
+                default:
+                    _weakSelf.requestFailed(APIConstants.APIErrorMessages.genericMessage)
                 }
-            } catch {
-                requestFailed(error.localizedDescription)
             }
         }
-        
     }
 }
