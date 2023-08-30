@@ -74,8 +74,8 @@ class WelcomeScreenViewController: UIViewController {
             marketplaceImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             marketplaceImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             marketplaceImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            marketplaceImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            marketplaceImageView.heightAnchor.constraint(equalToConstant: view.frame.size.height/2),
+            marketplaceImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            marketplaceImageView.heightAnchor.constraint(equalToConstant: view.frame.size.height/2.4),
             
             nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             nextButton.topAnchor.constraint(equalTo: marketplaceImageView.bottomAnchor, constant: 16),

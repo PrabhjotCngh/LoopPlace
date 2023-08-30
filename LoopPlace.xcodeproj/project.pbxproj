@@ -19,21 +19,18 @@
 		430ED0A52A2E419000F602C4 /* HomeDashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED09F2A2E419000F602C4 /* HomeDashBoardView.swift */; };
 		430ED0A92A2E41B000F602C4 /* CollectionListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0A62A2E41B000F602C4 /* CollectionListingViewModel.swift */; };
 		430ED0AA2A2E41B000F602C4 /* HomeDashBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0A72A2E41B000F602C4 /* HomeDashBoardViewModel.swift */; };
-		430ED0AB2A2E41B000F602C4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0A82A2E41B000F602C4 /* LocationManager.swift */; };
 		430ED0AD2A2E41B800F602C4 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0AC2A2E41B800F602C4 /* DataStore.swift */; };
 		430ED0AF2A2E41CF00F602C4 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0AE2A2E41CF00F602C4 /* Extension+Color.swift */; };
 		430ED0B22A2E421F00F602C4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0B02A2E421F00F602C4 /* APIManager.swift */; };
-		430ED0B32A2E421F00F602C4 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0B12A2E421F00F602C4 /* HTTPMethods.swift */; };
-		430ED0BA2A2E443800F602C4 /* WelcomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0B52A2E443800F602C4 /* WelcomeScreenInteractor.swift */; };
-		430ED0BB2A2E443800F602C4 /* WelcomeScreenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0B62A2E443800F602C4 /* WelcomeScreenInterface.swift */; };
-		430ED0BC2A2E443800F602C4 /* WelcomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0B72A2E443800F602C4 /* WelcomeScreenPresenter.swift */; };
-		430ED0BD2A2E443800F602C4 /* WelcomeScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0B82A2E443800F602C4 /* WelcomeScreenConfigurator.swift */; };
-		430ED0BE2A2E443800F602C4 /* WelcomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ED0B92A2E443800F602C4 /* WelcomeScreenRouter.swift */; };
 		43F7A03C2A2E2BA300D5E8B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7A03B2A2E2BA300D5E8B6 /* AppDelegate.swift */; };
 		43F7A03E2A2E2BA300D5E8B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F7A03D2A2E2BA300D5E8B6 /* SceneDelegate.swift */; };
 		43F7A0432A2E2BA300D5E8B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F7A0412A2E2BA300D5E8B6 /* Main.storyboard */; };
 		43F7A0452A2E2BA400D5E8B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F7A0442A2E2BA400D5E8B6 /* Assets.xcassets */; };
 		43F7A0482A2E2BA400D5E8B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F7A0462A2E2BA400D5E8B6 /* LaunchScreen.storyboard */; };
+		8D96924F2A9CA4DB008D3957 /* AdDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D96924E2A9CA4DB008D3957 /* AdDetailsHeaderView.swift */; };
+		8D9692512A9CF450008D3957 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9692502A9CF450008D3957 /* InsetMapView.swift */; };
+		8D9692532A9CFCAB008D3957 /* AdDetailHeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9692522A9CFCAB008D3957 /* AdDetailHeadingView.swift */; };
+		8D9692552A9D0BA4008D3957 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9692542A9D0BA4008D3957 /* LocationModel.swift */; };
 		8DEC2EF62A93CE4700EF10CF /* UILabel+LoopPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC2EF52A93CE4700EF10CF /* UILabel+LoopPlace.swift */; };
 		8DEC2EF92A93D09800EF10CF /* LoopPlaceColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC2EF82A93D09800EF10CF /* LoopPlaceColors.swift */; };
 		8DEC2EFB2A93D10500EF10CF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEC2EFA2A93D10500EF10CF /* Colors.xcassets */; };
@@ -60,16 +57,9 @@
 		430ED09F2A2E419000F602C4 /* HomeDashBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashBoardView.swift; sourceTree = "<group>"; };
 		430ED0A62A2E41B000F602C4 /* CollectionListingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionListingViewModel.swift; sourceTree = "<group>"; };
 		430ED0A72A2E41B000F602C4 /* HomeDashBoardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashBoardViewModel.swift; sourceTree = "<group>"; };
-		430ED0A82A2E41B000F602C4 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		430ED0AC2A2E41B800F602C4 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		430ED0AE2A2E41CF00F602C4 /* Extension+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		430ED0B02A2E421F00F602C4 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		430ED0B12A2E421F00F602C4 /* HTTPMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
-		430ED0B52A2E443800F602C4 /* WelcomeScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenInteractor.swift; sourceTree = "<group>"; };
-		430ED0B62A2E443800F602C4 /* WelcomeScreenInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenInterface.swift; sourceTree = "<group>"; };
-		430ED0B72A2E443800F602C4 /* WelcomeScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenPresenter.swift; sourceTree = "<group>"; };
-		430ED0B82A2E443800F602C4 /* WelcomeScreenConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenConfigurator.swift; sourceTree = "<group>"; };
-		430ED0B92A2E443800F602C4 /* WelcomeScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenRouter.swift; sourceTree = "<group>"; };
 		43F7A0382A2E2BA300D5E8B6 /* LoopPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F7A03B2A2E2BA300D5E8B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F7A03D2A2E2BA300D5E8B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +67,10 @@
 		43F7A0442A2E2BA400D5E8B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43F7A0472A2E2BA400D5E8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43F7A0492A2E2BA400D5E8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D96924E2A9CA4DB008D3957 /* AdDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailsHeaderView.swift; sourceTree = "<group>"; };
+		8D9692502A9CF450008D3957 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
+		8D9692522A9CFCAB008D3957 /* AdDetailHeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailHeadingView.swift; sourceTree = "<group>"; };
+		8D9692542A9D0BA4008D3957 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		8DEC2EF52A93CE4700EF10CF /* UILabel+LoopPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+LoopPlace.swift"; sourceTree = "<group>"; };
 		8DEC2EF82A93D09800EF10CF /* LoopPlaceColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopPlaceColors.swift; sourceTree = "<group>"; };
 		8DEC2EFA2A93D10500EF10CF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -107,6 +101,7 @@
 				430ED0932A2E417800F602C4 /* AddressRowModel.swift */,
 				430ED0942A2E417800F602C4 /* CategoryListingModel.swift */,
 				430ED0952A2E417800F602C4 /* CategoryModel.swift */,
+				8D9692542A9D0BA4008D3957 /* LocationModel.swift */,
 				430ED0922A2E417800F602C4 /* RatingModel.swift */,
 			);
 			path = Model;
@@ -115,11 +110,10 @@
 		430ED08C2A2E40CC00F602C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				430ED09A2A2E419000F602C4 /* AdDetailView.swift */,
 				430ED09E2A2E419000F602C4 /* CollectionsView.swift */,
 				8DEC2F112A9761AA00EF10CF /* Home Screen */,
-				8DEC2F232A98E61000EF10CF /* SelectedAds Screen */,
-				430ED09B2A2E419000F602C4 /* RatingsView.swift */,
+				8DEC2F232A98E61000EF10CF /* Ads Listing Screen */,
+				8D96924D2A9CA357008D3957 /* Ad Detail Screen */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,7 +123,6 @@
 			children = (
 				430ED0A72A2E41B000F602C4 /* HomeDashBoardViewModel.swift */,
 				430ED0A62A2E41B000F602C4 /* CollectionListingViewModel.swift */,
-				430ED0A82A2E41B000F602C4 /* LocationManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -147,7 +140,6 @@
 			children = (
 				8DEC2F1A2A97690C00EF10CF /* Factory */,
 				430ED0B02A2E421F00F602C4 /* APIManager.swift */,
-				430ED0B12A2E421F00F602C4 /* HTTPMethods.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -175,11 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				430ED0892A2E3F5000F602C4 /* WelcomeScreenViewController.swift */,
-				430ED0B82A2E443800F602C4 /* WelcomeScreenConfigurator.swift */,
-				430ED0B52A2E443800F602C4 /* WelcomeScreenInteractor.swift */,
-				430ED0B62A2E443800F602C4 /* WelcomeScreenInterface.swift */,
-				430ED0B72A2E443800F602C4 /* WelcomeScreenPresenter.swift */,
-				430ED0B92A2E443800F602C4 /* WelcomeScreenRouter.swift */,
 			);
 			path = WelcomeScreen;
 			sourceTree = "<group>";
@@ -218,6 +205,18 @@
 				43F7A0492A2E2BA400D5E8B6 /* Info.plist */,
 			);
 			path = LoopPlace;
+			sourceTree = "<group>";
+		};
+		8D96924D2A9CA357008D3957 /* Ad Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				430ED09A2A2E419000F602C4 /* AdDetailView.swift */,
+				8D96924E2A9CA4DB008D3957 /* AdDetailsHeaderView.swift */,
+				8D9692522A9CFCAB008D3957 /* AdDetailHeadingView.swift */,
+				430ED09B2A2E419000F602C4 /* RatingsView.swift */,
+				8D9692502A9CF450008D3957 /* InsetMapView.swift */,
+			);
+			path = "Ad Detail Screen";
 			sourceTree = "<group>";
 		};
 		8DEC2EF42A93CE1B00EF10CF /* UIComponents */ = {
@@ -266,13 +265,13 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		8DEC2F232A98E61000EF10CF /* SelectedAds Screen */ = {
+		8DEC2F232A98E61000EF10CF /* Ads Listing Screen */ = {
 			isa = PBXGroup;
 			children = (
 				430ED09C2A2E419000F602C4 /* CollectionListingView.swift */,
 				8DEC2F242A98FA9400EF10CF /* ColectionListingRowView.swift */,
 			);
-			path = "SelectedAds Screen";
+			path = "Ads Listing Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,24 +347,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEC2F172A97638800EF10CF /* ProductItemView.swift in Sources */,
-				430ED0B32A2E421F00F602C4 /* HTTPMethods.swift in Sources */,
-				430ED0BE2A2E443800F602C4 /* WelcomeScreenRouter.swift in Sources */,
 				430ED0A02A2E419000F602C4 /* AdDetailView.swift in Sources */,
+				8D9692512A9CF450008D3957 /* InsetMapView.swift in Sources */,
 				8DEC2EF92A93D09800EF10CF /* LoopPlaceColors.swift in Sources */,
 				430ED0B22A2E421F00F602C4 /* APIManager.swift in Sources */,
 				430ED0A22A2E419000F602C4 /* CollectionListingView.swift in Sources */,
 				430ED0AD2A2E41B800F602C4 /* DataStore.swift in Sources */,
+				8D96924F2A9CA4DB008D3957 /* AdDetailsHeaderView.swift in Sources */,
 				8DEC2F152A9762BD00EF10CF /* TitleView.swift in Sources */,
-				430ED0BC2A2E443800F602C4 /* WelcomeScreenPresenter.swift in Sources */,
-				430ED0BB2A2E443800F602C4 /* WelcomeScreenInterface.swift in Sources */,
 				430ED0A52A2E419000F602C4 /* HomeDashBoardView.swift in Sources */,
 				430ED0A42A2E419000F602C4 /* CollectionsView.swift in Sources */,
-				430ED0AB2A2E41B000F602C4 /* LocationManager.swift in Sources */,
 				430ED0982A2E417800F602C4 /* CategoryListingModel.swift in Sources */,
 				430ED0AF2A2E41CF00F602C4 /* Extension+Color.swift in Sources */,
 				430ED0AA2A2E41B000F602C4 /* HomeDashBoardViewModel.swift in Sources */,
-				430ED0BA2A2E443800F602C4 /* WelcomeScreenInteractor.swift in Sources */,
-				430ED0BD2A2E443800F602C4 /* WelcomeScreenConfigurator.swift in Sources */,
+				8D9692552A9D0BA4008D3957 /* LocationModel.swift in Sources */,
 				43F7A03C2A2E2BA300D5E8B6 /* AppDelegate.swift in Sources */,
 				430ED0A92A2E41B000F602C4 /* CollectionListingViewModel.swift in Sources */,
 				8DEC2F252A98FA9400EF10CF /* ColectionListingRowView.swift in Sources */,
@@ -373,6 +368,7 @@
 				430ED0A12A2E419000F602C4 /* RatingsView.swift in Sources */,
 				430ED0972A2E417800F602C4 /* AddressRowModel.swift in Sources */,
 				430ED0992A2E417800F602C4 /* CategoryModel.swift in Sources */,
+				8D9692532A9CFCAB008D3957 /* AdDetailHeadingView.swift in Sources */,
 				430ED0962A2E417800F602C4 /* RatingModel.swift in Sources */,
 				8DEC2EF62A93CE4700EF10CF /* UILabel+LoopPlace.swift in Sources */,
 				8DEC2F192A97652500EF10CF /* NavigationBarView.swift in Sources */,
