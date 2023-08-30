@@ -14,14 +14,14 @@ class WelcomeScreenViewController: UIViewController {
     /// ImageView's
     private let marketplaceImageView: UIImageView = {
         let marketplaceImageView = UIImageView()
-        marketplaceImageView.image = UIImage(named: HomeScreenConstants.Image.marketplace)
+        marketplaceImageView.image = UIImage(named: OnboardingViewConstants.Image.marketplace)
         marketplaceImageView.translatesAutoresizingMaskIntoConstraints = false
         marketplaceImageView.backgroundColor = .clear
         return marketplaceImageView
     }()
     
     // Label's
-    private let welcomeLabel = UILabel.label(text: HomeScreenConstants.Text.welcome,
+    private let welcomeLabel = UILabel.label(text: OnboardingViewConstants.Text.welcome,
                                              font: .systemFont(ofSize: 22, weight: .regular),
                                              lineHeightMultiple: 1.01,
                                              kern: 0.5,
@@ -29,7 +29,7 @@ class WelcomeScreenViewController: UIViewController {
                                              textColor: .labelPrimary,
                                              accessibilityIdentifier: "welcomeLabel")
     
-    private let marketplaceLabel = UILabel.label(text: HomeScreenConstants.Text.marketplace,
+    private let marketplaceLabel = UILabel.label(text: OnboardingViewConstants.Text.marketplace,
                                                  font: .systemFont(ofSize: 34, weight: .semibold),
                                                  lineHeightMultiple: 1.01,
                                                  kern: 0.5,

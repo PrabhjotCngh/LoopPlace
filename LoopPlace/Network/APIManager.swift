@@ -7,8 +7,10 @@
 import Foundation
 
 protocol NetworkRequestProtocol {
-    typealias Handler = (Result<[CategoryListingModel], NetworkError>) -> Void
-    func performRequest(url: String, completionHandler: @escaping Handler)
+    typealias AdsHandler = (Result<[CategoryListingModel], NetworkError>) -> Void
+    typealias SelectedAdHandler = (Result<[CategoryModel], NetworkError>) -> Void
+    func getAds(url: String, completionHandler: @escaping AdsHandler)
+    func getSelectedAd(url: String, completionHandler: @escaping SelectedAdHandler)
 }
 
 class APIManager: NetworkRequestProtocol {
@@ -20,13 +22,57 @@ class APIManager: NetworkRequestProtocol {
         self.session = session
     }
     
-    /// Request the API data with parameters (T is a decodable model).
-    func performRequest(url: String, completionHandler: @escaping Handler) {
+    //MARK: - Get all advertisments
+    func getAds(url: String, completionHandler: @escaping AdsHandler) {
+        /// Prepare URL
         guard let url = URL(string: url) else {
             completionHandler(.failure(.invalidURL))
             return
         }
         
+        /// Perform network request
+        performRequest(url: url) { result in
+            switch result {
+            case .success(let data):
+                do {
+                    let responseModel = try JSONDecoder().decode([CategoryListingModel].self, from: data)
+                    completionHandler(.success(responseModel))
+                } catch {
+                    completionHandler(.failure(.decodingError(error)))
+                }
+            case .failure(let error):
+                completionHandler(.failure(error))
+            }
+        }
+    }
+    
+    func getSelectedAd(url: String, completionHandler: @escaping SelectedAdHandler) {
+        /// Prepare URL
+        guard let url = URL(string: url) else {
+            completionHandler(.failure(.invalidURL))
+            return
+        }
+        
+        /// Perform network request
+        performRequest(url: url) { result in
+            switch result {
+            case .success(let data):
+                do {
+                    let responseModel = try JSONDecoder().decode([CategoryModel].self, from: data)
+                    completionHandler(.success(responseModel))
+                } catch {
+                    completionHandler(.failure(.decodingError(error)))
+                }
+            case .failure(let error):
+                completionHandler(.failure(error))
+            }
+        }
+    }
+}
+
+//MARK: - Perform URLSession request
+extension APIManager {
+    func performRequest(url: URL, completionHandler: @escaping (Result<Data, NetworkError>) -> Void) {
         let urlRequest = URLRequest(url: url)
         session.dataTask(with: urlRequest) { data, response, error in
             if let error = error {
@@ -43,13 +89,7 @@ class APIManager: NetworkRequestProtocol {
                 completionHandler(.failure(.invalidResponse))
                 return
             }
-            
-            do {
-                let responseModel = try JSONDecoder().decode([CategoryListingModel].self, from: data)
-                completionHandler(.success(responseModel))
-            } catch {
-                completionHandler(.failure(.decodingError(error)))
-            }
+            completionHandler(.success(data))
         }.resume()
     }
 }

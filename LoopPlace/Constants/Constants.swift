@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum HomeScreenConstants {
+enum OnboardingViewConstants {
     enum Image {
         static let marketplace = "ic_launch"
     }
@@ -18,9 +18,17 @@ enum HomeScreenConstants {
     }
 }
 
+enum HomeDashboardViewConstants {
+    enum Text {
+        static let hotDeals = "Hot Deals"
+        static let error = "Error!"
+    }
+}
+
 enum APIConstants {
     static let categoryListAPIUrl = "https://pubservices.banyanpro.com/api/ProductCategories"
-    
+    static let categoryItemListAPIUrl = "https://pubservices.banyanpro.com/api/Items?categoryID="
+
     enum APIErrorMessages {
         static let invalidURL = "Incorrect url!"
         static let invalidData = "Response data is empty!"

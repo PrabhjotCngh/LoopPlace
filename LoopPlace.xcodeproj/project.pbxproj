@@ -44,6 +44,7 @@
 		8DEC2F172A97638800EF10CF /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC2F162A97638800EF10CF /* ProductItemView.swift */; };
 		8DEC2F192A97652500EF10CF /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC2F182A97652500EF10CF /* NavigationBarView.swift */; };
 		8DEC2F1C2A97692300EF10CF /* NetworkServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC2F1B2A97692300EF10CF /* NetworkServiceFactory.swift */; };
+		8DEC2F252A98FA9400EF10CF /* ColectionListingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC2F242A98FA9400EF10CF /* ColectionListingRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		8DEC2F162A97638800EF10CF /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
 		8DEC2F182A97652500EF10CF /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		8DEC2F1B2A97692300EF10CF /* NetworkServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFactory.swift; sourceTree = "<group>"; };
+		8DEC2F242A98FA9400EF10CF /* ColectionListingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColectionListingRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +127,8 @@
 		430ED08D2A2E40D200F602C4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				430ED0A62A2E41B000F602C4 /* CollectionListingViewModel.swift */,
 				430ED0A72A2E41B000F602C4 /* HomeDashBoardViewModel.swift */,
+				430ED0A62A2E41B000F602C4 /* CollectionListingViewModel.swift */,
 				430ED0A82A2E41B000F602C4 /* LocationManager.swift */,
 			);
 			path = ViewModel;
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				430ED09C2A2E419000F602C4 /* CollectionListingView.swift */,
+				8DEC2F242A98FA9400EF10CF /* ColectionListingRowView.swift */,
 			);
 			path = "SelectedAds Screen";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				430ED0BD2A2E443800F602C4 /* WelcomeScreenConfigurator.swift in Sources */,
 				43F7A03C2A2E2BA300D5E8B6 /* AppDelegate.swift in Sources */,
 				430ED0A92A2E41B000F602C4 /* CollectionListingViewModel.swift in Sources */,
+				8DEC2F252A98FA9400EF10CF /* ColectionListingRowView.swift in Sources */,
 				43F7A03E2A2E2BA300D5E8B6 /* SceneDelegate.swift in Sources */,
 				430ED0A12A2E419000F602C4 /* RatingsView.swift in Sources */,
 				430ED0972A2E417800F602C4 /* AddressRowModel.swift in Sources */,

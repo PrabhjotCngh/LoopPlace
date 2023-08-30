@@ -47,7 +47,7 @@ struct HomeDashBoardView: View {
             } //: ScrollView
             
             if !showAlert {
-                TitleView(title: "Hot Deals")
+                TitleView(title: HomeDashboardViewConstants.Text.hotDeals)
                     .padding(.horizontal, 16)
             }
             
@@ -70,13 +70,11 @@ struct HomeDashBoardView: View {
             
             Spacer()
         } //: VStack
-        .ignoresSafeArea()
         .onAppear {
             homeDashboardViewModel.fetchCategoryList()
             callbackHandler()
         }
-        .alert("Error!", isPresented: $showAlert) {
-            Button("OK") { }
+        .alert(HomeDashboardViewConstants.Text.error, isPresented: $showAlert) {
         } message: {
             Text(errorMessage)
         }

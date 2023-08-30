@@ -7,7 +7,6 @@
 import Foundation
 
 class HomeDashBoardViewModel: ObservableObject {
-    
     //MARK: - Variables
     var networkRequest: NetworkRequestProtocol
     var requestFailed: (String) -> Void = {_ in}
@@ -20,7 +19,7 @@ class HomeDashBoardViewModel: ObservableObject {
     //MARK: - Functions
     /// Fetch list of categories
     func fetchCategoryList() {
-        networkRequest.performRequest(url: APIConstants.categoryListAPIUrl) { [weak self] result in
+        networkRequest.getAds(url: APIConstants.categoryListAPIUrl) { [weak self] result in
             if let _weakSelf = self {
                 switch result {
                 case .success(let responseModel):
