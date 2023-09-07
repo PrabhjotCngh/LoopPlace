@@ -25,7 +25,7 @@ struct CollectionListingView: View {
     var body: some View {
         List(collectionListingViewModel.categoryItemsList, id: \.itemID) { item in
             NavigationLink {
-                
+                AdDetailView(adDetail: item)
             } label: {
                 ColectionListingRowView(category: item)
                     .padding(.vertical, 4)

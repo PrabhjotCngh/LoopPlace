@@ -12,4 +12,5 @@ struct CategoryModel: Codable {
     let longitude: String
     let price: String
     let uploadedAt: String
+    let starRatings: [Int]
 }

@@ -10,6 +10,7 @@ class HomeDashBoardViewModel: ObservableObject {
     //MARK: - Variables
     var networkRequest: NetworkRequestProtocol
     var requestFailed: (String) -> Void = {_ in}
+    var hideLoader: () -> Void = {}
     @Published var categoryList: [CategoryListingModel] = []
     
     init(networkRequest: NetworkRequestProtocol) {
@@ -21,6 +22,7 @@ class HomeDashBoardViewModel: ObservableObject {
     func fetchCategoryList() {
         networkRequest.getAds(url: APIConstants.categoryListAPIUrl) { [weak self] result in
             if let _weakSelf = self {
+                _weakSelf.hideLoader()
                 switch result {
                 case .success(let responseModel):
                     DispatchQueue.main.async {
